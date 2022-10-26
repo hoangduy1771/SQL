@@ -27,7 +27,16 @@ RENAME COLUMN phone_number TO email;
 
 -- change data type of email after transition to phone_number
 ALTER TABLE employees
-MODIFY COLUMN email VARCHAR(100);
+MODIFY COLUMN email VARCHAR(100)
+-- move email to stand after last_name 
+AFTER last_name;
+
+ALTER TABLE employees
+ADD COLUMN phone_number INT(14)
+FIRST;
+
+
+
 
 
 
