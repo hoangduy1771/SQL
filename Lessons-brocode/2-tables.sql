@@ -35,6 +35,8 @@ ALTER TABLE employees
 ADD COLUMN phone_number INT(14)
 FIRST;
 
+ALTER TABLE employees
+DROP phone_number;
 
 
 
