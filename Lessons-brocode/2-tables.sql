@@ -31,23 +31,14 @@ MODIFY COLUMN email VARCHAR(100)
 -- move email to stand after last_name 
 AFTER last_name;
 
+-- add column phone_number and move it to first column 
 ALTER TABLE employees
 ADD COLUMN phone_number INT(14)
 FIRST;
 
+-- delete column
 ALTER TABLE employees
 DROP phone_number;
-
-
-
-
-
-
-
-
-
-
-
 
 
 
