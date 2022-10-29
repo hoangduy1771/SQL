@@ -22,7 +22,7 @@ USE myDB;
 -- delete a duplicate row 
 DELETE FROM employees WHERE first_name='Eugene' LIMIT 1;
 
-SELECT * FROM employees;
+
 
 
 
