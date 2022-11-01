@@ -7,7 +7,7 @@ USE myDB;
 ALTER DATABASE myDB READ ONLY = 0;
 
 -- Need to install keyring to work with encrypted database
-ALTER DATABASE myDB ENCRYPTION = 'Y';
+ALTER DATABASE myDB ENCRYPTION = 'N';
 
 -- look for plugin keyring 
 SELECT 
