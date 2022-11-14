@@ -15,5 +15,4 @@ VALUES (6, "calamary", NULL);
 ALTER TABLE products
 MODIFY price DECIMAL(4, 2) NOT NULL;
 
-SHOW CREATE TABLE products_notNull;
 

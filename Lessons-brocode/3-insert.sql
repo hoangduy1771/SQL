@@ -19,8 +19,6 @@ USE myDB;
  MODIFY COLUMN employee_id INT
  FIRST;
  
--- delete a duplicate row 
-DELETE FROM employees WHERE first_name='Eugene' LIMIT 1;
 
 
 
