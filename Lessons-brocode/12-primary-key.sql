@@ -27,7 +27,7 @@ UPDATE transactions
 SET ammount = 500000.00
 WHERE transaction_id = 3;
 
-
+DELETE FROM transactions WHERE transaction_id = NULL;
 
 
 
