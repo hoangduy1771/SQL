@@ -7,7 +7,7 @@ USE myDB;
 ALTER DATABASE myDB READ ONLY = 0;
 
 -- Need to install keyring to work with encrypted database
-ALTER DATABASE myDB ENCRYPTION = 'N';
+ALTER DATABASE myDB ENCRYPTION = 'Y';
 
 -- look for plugin keyring 
 SELECT 
@@ -21,7 +21,9 @@ SHOW VARIABLES LIKE 'plugin_dir';
 -- install plugin
 INSTALL PLUGIN keyring_file SONAME 'keyring_file.dll';
 
-
+CREATE TABLE employees (
+	employee_id INT
+);
 
 
 
