@@ -22,7 +22,9 @@ WHERE transaction_id = 1;
 -- delete all rows from a table
 DELETE FROM transactions; 
 
-
+-- delete a number of last row in a table
+delete from income
+order by income_name desc limit 3;
 
 
 
