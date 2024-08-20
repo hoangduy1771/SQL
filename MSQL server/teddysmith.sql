@@ -65,9 +65,22 @@ update production.pokemon
 set name = 'Blastoise', phone = '01245568'
 where id = 2;
 
+--sort data
+select * from production.products
+  order by model_year ASC;   -- DESC
+ 
+ -- trick: order by Column, ColumnOrdinal [the number of the column], ColumnAlias [ASC/DESC]
+ -- ex: order by 5 DESC [order by ColumnOrdinal]
 
 
-
+SELECT TOP (1000) [product_id]
+      ,[product_name] as [Product Name]
+      ,[brand_id]
+      ,[category_id]
+      ,[model_year]
+      ,[list_price]
+  FROM [BikeStores].[production].[products]
+  order by [Product Name] ASC; -- order by ColumnAlias
 
 
 
